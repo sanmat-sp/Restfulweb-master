@@ -17,7 +17,7 @@ public class StudentController {
         return studentService.getStudents();
     }
 
-    @RequestMapping(method=RequestMethod.POST, value="students")
+    @RequestMapping(method=RequestMethod.POST, value="/students")
     public void addStudent(@RequestBody Student student){
         System.out.println("Controllers add student");
         studentService.addStudent(student);
